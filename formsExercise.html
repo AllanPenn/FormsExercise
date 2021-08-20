@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Survey to gauge a customer's experience">
+  <title>Survey</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Customer Experience Survey</legend>
+      <label for="storeNum">Store Number</label>
+      <select name="storeNum" id="storeNum">
+        <option value="3109">3109</option>
+        <option value="2421">2421</option>
+        <option value="5357">5357</option>
+      </select>
+      <fieldset>
+        <legend>When you visited</legend>
+        <label for="visitDate">Date Visited</label>
+        <input type="date" name="visitDate" id="visitDate">
+        <br>
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+      </fieldset>
+      <label for="fullName">Full Name</label>
+      <input type="text" name="fullName" id="fullName" placeholder="Name">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email">
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" value="Female">
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+      <label for="experience">Tell us about your experience:</label>
+      <br>
+      <textarea name="" id="" cols="20" rows="2"></textarea>
+      <br>
+      <label for="timesVisit">Times visited in the last month:</label>
+      <br>
+      <input type="number" name="timesVisit" id="timesVisit">
+      <br>
+      <input type="checkbox" name="contactCheck" id="contactCheck">
+      <label for="contactCheck">Please check the box if you would be willing to be contacted about your experience</label>
+      <br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+
+</html>
